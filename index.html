@@ -1,0 +1,603 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>myTitle</title>
+    <link rel="stylesheet" href="./source/style.css">
+    <script src="https://kit.fontawesome.com/e4298329f1.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css">
+</head>
+<body>
+    <div id="nav">
+        <div id="n-left" style="cursor: pointer;">
+            <img src="./assets/amyfashion-logo.svg" alt="amyfashion-logo"/>
+        </div>
+        <div id="n-right">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <!-- <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Shop</a></li> -->
+            </ul>
+        </div>
+    </div>
+    
+    <div id="welcome">
+        <h1>WELCOME</h1>
+    </div>
+
+    <div id="bottom">
+        <!-- ================== ROW-1========================== -->
+        <div id="a">
+            <div id="a1">
+                <!-- IMG-1 -->
+                <div class="dress">
+                    <img src="./assets/img1.jpg" alt="">
+                    <i class="fa-solid fa-circle-info" onclick="toggleDressInfo()"></i>
+                    <div class="dress-info" id="dressInfo">
+                        <h2>
+                            <b>Length:</b> Maxi/Full Length <br>
+                            <b>Fabric:</b> Lycra Blend <br>
+                            <b>Occasion:</b> Casual <br>
+                            <b>Sleeveless:</b> Solid Dress <br>
+                            <b>Color:</b> Black <br>
+                            <b>Pattern:</b> Solid <br>
+                            <b>Ideal For:</b> Women <br>
+                            <b>Type:</b> A-line <br>
+                            <b>Style Code:</b> Aline-3021-Black <br>
+                            <b>Suitable For:</b> Western Wear
+                        </h2>
+                    </div>
+                    <div class="price-tag">
+                        <p><sup>₹</sup>1599</p>
+                        <button onclick="sendMessage('1')">Contact</button>
+                    </div>
+                </div>
+                <!-- IMG-2 -->
+                <div class="dress">
+                    <img src="./assets/img2.jpg" alt="">
+                    <i class="fa-solid fa-circle-info" onclick="toggleDressInfo()"></i>
+                    <div class="dress-info" id="dressInfo">
+                        <h2>
+                            <b>Material:</b> Metallic <br>
+                            <b>Polyster Lining:</b> Polyster <br>
+                            <b>Strechable Fit:</b> Slim Fit <br>
+                            <b>Quantity:</b> 1 <br>
+                            <b>Piece Chest Pad:</b> No <br>
+                            <b>Belt:</b> No <br>
+                            <b>Type:</b> full sleeveless
+                            <b>Sleeve Length:</b> Full Sleeve <br>
+                            <b>Length:</b> Short <br>
+                            <b>Silhouette:</b> S-line
+                        </h2>
+                    </div>
+                    <div class="price-tag">
+                        <p><sup>₹</sup>1099</p>
+                        <button onclick="sendMessage('2')">Contact</button>
+                    </div>
+                </div>
+            </div>
+            
+            <div id="a2">
+                <!-- IMG-3 -->
+                <div class="dress">
+                    <img src="./assets/img3.jpg" alt="">
+                    <i class="fa-solid fa-circle-info" onclick="toggleDressInfo()"></i>
+                    <div class="dress-info" id="dressInfo">
+                        <h2>
+                            <b>Fabric:</b> Velvet <br>
+                            <b>Neck:</b> V neck & back Elastic <br>
+                            <b>Size:</b> M to XL <br>
+                            <b>Morgan is wearing the small:</b> <br>
+                            <b>Material:</b> 95% Polyster & 5% Spandex <br>
+                        </h2>
+                    </div>
+                    <div class="price-tag">
+                        <p><sup>₹</sup>1899</p>
+                        <button onclick="sendMessage('3')">Contact</button>
+                    </div>
+                </div>
+                <!-- IMG-4 -->
+                <div class="dress">
+                    <img src="./assets/img4.jpg" alt="">
+                    <i class="fa-solid fa-circle-info" onclick="toggleDressInfo()"></i>
+                    <div class="dress-info" id="dressInfo">
+                        <h2>
+                            <b>Material:</b> Nylon <br>
+                            <b>Length:</b> Mini <br>
+                            <b>Occasion Type:</b> Birthday/Club wear <br>
+                            <b>Sleeve type:</b> Sleeveless <br>
+                            <b>Pattern:</b> Solid <br>
+                            <b>Style:</b> Bodycon <br>
+                        </h2>
+                    </div>
+                    <div class="price-tag">
+                        <p><sup>₹</sup>999</p>
+                        <button onclick="sendMessage('4')">Contact</button>
+                    </div>
+                </div>
+
+            </div>
+            <div id="a3">
+                <!-- IMG-5 -->
+                <div class="dress">
+                    <img src="./assets/img5.jpg" alt="">
+                    <i class="fa-solid fa-circle-info" onclick="toggleDressInfo()"></i>
+                    <div class="dress-info" id="dressInfo">
+                        <h2>
+                            <b>Material:</b> Powernet <br>
+                            <b>Length:</b> Mini <br>
+                            <b>Occasion Type:</b> Perfect for any occasion <br>
+                            <b>Sleeve type:</b> Sleeveless <br>
+                            <b>Pattern:</b> Solid <br>
+                            <b>Style:</b> Bodycon <br>
+                        </h2>
+                    </div>
+                    <div class="price-tag">
+                        <p><sup>₹</sup>1299</p>
+                        <button onclick="sendMessage('5')">Contact</button>
+                    </div>
+                </div>
+                <!-- IMG-6 -->
+                <div class="dress">
+                    <img src="./assets/img6.jpg" alt="">
+                    <i class="fa-solid fa-circle-info" onclick="toggleDressInfo()"></i>
+                    <div class="dress-info" id="dressInfo">
+                        <h2>
+                            <b>Material:</b> Satin <br>
+                            <b>Length:</b> Full <br>
+                            <b>Occasion Type:</b> Party Wear <br>
+                            <b>Sleeve Type:</b> Full Sleeveless <br>
+                            <b>Patten:</b> Solid <br>
+                            <b>Style:</b> Bodycon <br>
+                        </h2>
+                    </div>
+                    <div class="price-tag">
+                        <p><sup>₹</sup>2249</p>
+                        <button onclick="sendMessage('6')">Contact</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ========================= ROW-2 ============================== -->
+        <div id="b">
+            <div id="a1">
+                <!-- IMG-7 -->
+                <div class="dress">
+                    <img src="./assets/img7.jpg" alt="">
+                    <i class="fa-solid fa-circle-info" onclick="toggleDressInfo()"></i>
+                    <div class="dress-info" id="dressInfo">
+                        <h2>
+                            <b>Material:</b> Velvet <br>
+                            <b>Length:</b> Top Crop<br>
+                            <b>Bottom:</b> Full <br>
+                            <b>Sleeve Type:</b> Sleeveless <br>
+                            <b>Patter:</b> Solid <br>
+                            <b>Style:</b> Cordset <br>
+                        </h2>
+                    </div>
+                    <div class="price-tag">
+                        <p><sup>₹</sup>2199</p>
+                        <button onclick="sendMessage('7')">Contact</button>
+                    </div>
+                </div>
+                <!-- IMG-8 -->
+                <div class="dress">
+                    <img src="./assets/img8.jpg" alt="">
+                    <i class="fa-solid fa-circle-info" onclick="toggleDressInfo()"></i>
+                    <div class="dress-info" id="dressInfo">
+                        <h2>
+                            <b>Material:</b> Velvetbr>
+                            <b>Length:</b> Top Crop <br>
+                            <b>Bottom:</b> Full <br>
+                            <b>Sleeve Type:</b> Full Sleeveless <br>
+                            <b>Pattern:</b> Solid <br>
+                            <b>Style:</b> Cordset <br>
+                        </h2>
+                    </div>
+                    <div class="price-tag">
+                        <p><sup>₹</sup>2199</p>
+                        <button onclick="sendMessage('8')">Contact</button>
+                    </div>
+                </div>
+            </div>
+            
+            <div id="a2">
+                <!-- IMG-9 -->
+                <div class="dress">
+                    <img src="./assets/img9.jpg" alt="">
+                    <i class="fa-solid fa-circle-info" onclick="toggleDressInfo()"></i>
+                    <div class="dress-info" id="dressInfo">
+                        <h2>
+                            <b>Material:</b> Velvet <br>
+                            <b>Length:</b> Full <br>
+                            <b>Sleeve Type:</b> Sleeveless <br>
+                            <b>Pattern:</b> Solid <br>
+                            <b>Style:</b> Bodycon <br>
+                        </h2>
+                    </div>
+                    <div class="price-tag">
+                        <p><sup>₹</sup>1749</p>
+                        <button onclick="sendMessage('9')">Contact</button>
+                    </div>
+                </div>
+                <!-- IMG-10 -->
+                <div class="dress">
+                    <img src="./assets/img10.jpg" alt="">
+                    <i class="fa-solid fa-circle-info" onclick="toggleDressInfo()"></i>
+                    <div class="dress-info" id="dressInfo">
+                        <h2>
+                            <b>Material:</b> Imported Fabric <br>
+                            <b>Length:</b> Full Length <br>
+                            <b>Sleeve Type:</b> One side sleeveless <br>
+                            <b>Patter:</b> Solid <br>
+                            <b>Style:</b> Bodycon <br>
+                        </h2>
+                    </div>
+                    <div class="price-tag">
+                        <p><sup>₹</sup>1049</p>
+                        <button onclick="sendMessage('10')">Contact</button>
+                    </div>
+                </div>
+
+            </div>
+            <div id="a3">
+                <!-- IMG-11 -->
+                <div class="dress">
+                    <img src="./assets/img11.jpg" alt="">
+                    <i class="fa-solid fa-circle-info" onclick="toggleDressInfo()"></i>
+                    <div class="dress-info" id="dressInfo">
+                        <h2>
+                            <b>Material:</b> Imported Shimer Fabric <br>
+                            <b>Length:</b> Mini <br>
+                            <b>Sleeve Type:</b> Sleeveless<br>
+                            <b>Pattern:</b> Solid <br>
+                            <b>Style:</b> Bodycon <br>
+                        </h2>
+                    </div>
+                    <div class="price-tag">
+                        <p><sup>₹</sup>799</p>
+                        <button onclick="sendMessage('11')">Contact</button>
+                    </div>
+                </div>
+                <!-- IMG-12 -->
+                <div class="dress">
+                    <img src="./assets/img12.jpg" alt="">
+                    <i class="fa-solid fa-circle-info" onclick="toggleDressInfo()"></i>
+                    <div class="dress-info" id="dressInfo">
+                        <h2>
+                            <b>Material:</b> Satin Fabric <br>
+                            <b>Length:</b> Full Length <br>
+                            <b>Sleeve Type:</b> Sleeveless <br>
+                            <b>Pattern:</b> Solid<br>
+                            <b>Style:</b> Bodycon <br>
+                        </h2>
+                    </div>
+                    <div class="price-tag">
+                        <p><sup>₹</sup>1799</p>
+                        <button onclick="sendMessage('12')">Contact</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+        <!-- ========================= ROW-3 ============================== -->
+        <div id="c">
+            <div id="a1">
+                <!-- IMG-13 -->
+                <div class="dress">
+                    <img src="./assets/img13.jpg" alt="">
+                    <i class="fa-solid fa-circle-info" onclick="toggleDressInfo()"></i>
+                    <div class="dress-info" id="dressInfo">
+                        <h2>
+                            <b>Material:</b> Top Crochet <br>
+                            <b>Length:</b> Full Length <br>
+                            <b>Pattern:</b> Solid<br>
+                        </h2>
+                    </div>
+                    <div class="price-tag">
+                        <p><sup>₹</sup>1099</p>
+                        <button onclick="sendMessage('13')">Contact</button>
+                    </div>
+                </div>
+                <!-- IMG-14 -->
+                <div class="dress">
+                    <img src="./assets/img14.jpg" alt="">
+                    <i class="fa-solid fa-circle-info" onclick="toggleDressInfo()"></i>
+                    <div class="dress-info" id="dressInfo">
+                        <h2>
+                            <b>Material:</b> Imported Powernet>
+                            <b>length:</b> Full Length <br>
+                            <b>Sleeve Type:</b> Sleeveles with Full Sleeves Shrug  <br>
+                            <b>Pattern:</b> Solid <br>
+                            <b>Style:</b> Bodycon <br>
+                        </h2>
+                    </div>
+                    <div class="price-tag">
+                        <p><sup>₹</sup>1449</p>
+                        <button onclick="sendMessage('14')">Contact</button>
+                    </div>
+                </div>
+            </div>
+            
+            <div id="a2">
+                <!-- IMG-15 -->
+                <div class="dress">
+                    <img src="./assets/img15.jpg" alt="">
+                    <i class="fa-solid fa-circle-info" onclick="toggleDressInfo()"></i>
+                    <div class="dress-info" id="dressInfo">
+                        <h2>
+                            <b>Material:</b> Imported Shimer Fabric <br>
+                            <b>Length:</b> Full Length <br>
+                            <b>Sleeve Type:</b> One Side Sleeveles <br>
+                            <b>Pattern:</b> Solid <br>
+                            <b>Style:</b> Bodycon <br>
+                        </h2>
+                    </div>
+                    <div class="price-tag">
+                        <p><sup>₹</sup>1599</p>
+                        <button onclick="sendMessage('15')">Contact</button>
+                    </div>
+                </div>
+                <!-- IMG-16 -->
+                <div class="dress">
+                    <img src="./assets/img16.jpg" alt="">
+                    <i class="fa-solid fa-circle-info" onclick="toggleDressInfo()"></i>
+                    <div class="dress-info" id="dressInfo">
+                        <h2>
+                            <b>Material:</b> Imported Velvet<br>
+                            <b>Length:</b> Mini <br>
+                            <b>Sleeve Type</b> Sleevelesbr>
+                            <b>Patter:</b> Solid <br>
+                            <b>Style:</b> Bodycon <br>
+                        </h2>
+                    </div>
+                    <div class="price-tag">
+                        <p><sup>₹</sup>1749</p>
+                        <button onclick="sendMessage('16')">Contact</button>
+                    </div>
+                </div>
+
+            </div>
+            <div id="a3">
+                <!-- IMG-17 -->
+                <div class="dress">
+                    <img src="./assets/img17.jpg" alt="">
+                    <i class="fa-solid fa-circle-info" onclick="toggleDressInfo()"></i>
+                    <div class="dress-info" id="dressInfo">
+                        <h2>
+                            <b>Material:</b> Imported Velvet<br>
+                            <b>Length:</b> Full Length <br>
+                            <b>Sleeve Type:</b> Three-Fourth Sleeves <br>
+                            <b>Pattern:</b> Solid<br>
+                            <b>Style:</b> Bodycon <br>
+                        </h2>
+                    </div>
+                    <div class="price-tag">
+                        <p><sup>₹</sup>2099</p>
+                        <button onclick="sendMessage('17')">Contact</button>
+                    </div>
+                </div>
+                <!-- IMG-18 -->
+                <div class="dress">
+                    <img src="./assets/img18.jpg" alt="">
+                    <i class="fa-solid fa-circle-info" onclick="toggleDressInfo()"></i>
+                    <div class="dress-info" id="dressInfo">
+                        <h2>
+                            <b>Material:</b> Imported Powernet <br>
+                            <b>Length:</b> Ankle Length <br>
+                            <b>Sleeve Type:</b> Tube <br>
+                            <b>Pattern:</b> Solid <br>
+                            <b>Style:</b> Bodycon <br>
+                        </h2>
+                    </div>
+                    <div class="price-tag">
+                        <p><sup>₹</sup>1099</p>
+                        <button onclick="sendMessage('18')">Contact</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+        <!-- ========================= ROW-4 ============================== -->
+        <div id="d">
+            <div id="a1">
+                <!-- IMG-19 -->
+                <div class="dress">
+                    <img src="./assets/img19.jpg" alt="">
+                    <i class="fa-solid fa-circle-info" onclick="toggleDressInfo()"></i>
+                    <div class="dress-info" id="dressInfo">
+                        <h2>
+                            <b>Material:</b> Imported Powernet<br>
+                            <b>Length:</b> Ankle Length <br>
+                            <b>Sleeve Type:</b> Backless <br>
+                            <b>Pattern:</b> Solid <br>
+                            <b>Style:</b> Bodycon <br>
+                        </h2>
+                    </div>
+                    <div class="price-tag">
+                        <p><sup>₹</sup>899</p>
+                        <button onclick="sendMessage('19')">Contact</button>
+                    </div>
+                </div>
+                <!-- IMG-20 -->
+                <div class="dress">
+                    <img src="./assets/img20.jpg" alt="">
+                    <i class="fa-solid fa-circle-info" onclick="toggleDressInfo()"></i>
+                    <div class="dress-info" id="dressInfo">
+                        <h2>
+                            <b>Material:</b> Imported Satin <br>
+                            <b>Length:</b> Mini <br>
+                            <b>Sleeve Type:</b> Sleeveless <br>
+                            <b>Patter:</b> Solid<br>
+                            <b>Style: </b> Bodycon <br>
+                        </h2>
+                    </div>
+                    <div class="price-tag">
+                        <p><sup>₹</sup>999</p>
+                        <button onclick="sendMessage('20')">Contact</button>
+                    </div>
+                </div>
+            </div>
+            
+            <div id="a2">
+                <!-- IMG-21 -->
+                <div class="dress">
+                    <img src="./assets/img21.jpg" alt="">
+                    <i class="fa-solid fa-circle-info" onclick="toggleDressInfo()"></i>
+                    <div class="dress-info" id="dressInfo">
+                        <h2>
+                            <b>Material:</b> Imported Powernet <br>
+                            <b>Length:</b> Full Length <br>
+                            <b>Sleeve Type:</b> Full Sleeves <br>
+                            <b>Patterb:</b> Solid <br>
+                            <b>Style:</b> Bodycon <br>
+                        </h2>
+                    </div>
+                    <div class="price-tag">
+                        <p><sup>₹</sup>1599</p>
+                        <button onclick="sendMessage('21')">Contact</button>
+                    </div>
+                </div>
+                <!-- IMG-22 -->
+                <div class="dress">
+                    <img src="./assets/img22.jpg" alt="">
+                    <i class="fa-solid fa-circle-info" onclick="toggleDressInfo()"></i>
+                    <div class="dress-info" id="dressInfo">
+                        <h2>
+                            <b>Material:</b> Imported Fabric<br>
+                            <b>Length:</b> Full Length <br>
+                            <b>Sleeve Type:</b> Sleeveless <br>
+                            <b>Pattern:</b> Solid <br>
+                            <b>Style:</b> Bodycon <br>
+                        </h2>
+                    </div>
+                    <div class="price-tag">
+                        <p><sup>₹</sup>2099</p>
+                        <button onclick="sendMessage('22')">Contact</button>
+                    </div>
+                </div>
+
+            </div>
+            <div id="a3">
+                <!-- IMG-23 -->
+                <div class="dress">
+                    <img src="./assets/img23.jpg" alt="">
+                    <i class="fa-solid fa-circle-info" onclick="toggleDressInfo()"></i>
+                    <div class="dress-info" id="dressInfo">
+                        <h2>
+                            <b>Material:</b> Imported Hard Satin<br>
+                            <b>length:</b> Knee Length <br>
+                            <b>Sleeve Type:</b> Sleeveless <br>
+                            <b>Pattern:</b> Solid <br>
+                            <b>Style:</b> Bodycon <br>
+                        </h2>
+                    </div>
+                    <div class="price-tag">
+                        <p><sup>₹</sup>1299</p>
+                        <button onclick="sendMessage('23')">Contact</button>
+                    </div>
+                </div>
+                <!-- IMG-24 -->
+                <div class="dress">
+                    <img src="./assets/img24.jpg" alt="">
+                    <i class="fa-solid fa-circle-info" onclick="toggleDressInfo()"></i>
+                    <div class="dress-info" id="dressInfo">
+                        <h2>
+                            <b>Material:</b> Imprted Fabric <br>
+                            <b>Length:</b> Full Length <br>
+                            <b>Sleeve Type:</b> Full Sleeveless <br>
+                            <b>Pattern:</b> Solid <br>
+                            <b>Style:</b> Bodycon <br>
+                            <b>Size: </b>2XL
+                        </h2>
+                    </div>
+                    <div class="price-tag">
+                        <p><sup>₹</sup>1949</p>
+                        <button onclick="sendMessage('24')">Contact</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+        <!-- ========================= ROW-5 ============================== -->
+        <div id="e">
+            <div id="a1">
+                <!-- IMG-25 -->
+                <div class="dress">
+                    <img src="./assets/img25.jpg" alt="">
+                    <i class="fa-solid fa-circle-info" onclick="toggleDressInfo()"></i>
+                    <div class="dress-info" id="dressInfo">
+                        <h2>
+                            <b>Material:</b> Imported Fabric <br>
+                            <b>Length:</b> Full Length <br>
+                            <b>Sleeve Type</b> One Side Sleeveless <br>
+                            <b>Pattern:</b> Solid <br>
+                            <b>Style:</b> Bodycon <br>
+                        </h2>
+                    </div>
+                    <div class="price-tag">
+                        <p><sup>₹</sup>1049</p>
+                        <button onclick="sendMessage('25')">Contact</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+        
+        
+        <!-- FOOTER -->
+        <div id="footer">
+
+            <div>
+                <img src="./assets/amyfashion-logo.svg" alt="amyfashion-logo">
+                <p>Follow us on our social media channels to stay connected. <br> Report a problem ? Email us at <a href="#" style="color: royalblue; text-decoration: none;">amyfashion.in@gmail.com</a></p>
+            </div>
+            <div style="display: flex; justify-content: space-between; align-items: center; padding-right: 3vw;">
+                <div>
+                    <ul>
+                        <a href="#"><li>Contact us</li></a>
+                        <a href="./about us/index.html"><li>About us</li></a>
+                    </ul>
+        
+                    <div id="socials">
+                        <h3>Socialize with Amyfashion</h3>
+                        <div id="instagram" style="display: flex; flex-direction: row; gap: 10px; align-items: center; cursor: pointer;" onclick="window.open('https://www.instagram.com/amy_fashion.in')">
+                            <img src="./assets/insta-logo.png" alt="">
+                            <p>@amy_fashion.in</p>
+                        </div>
+                    </div>
+                </div>
+
+                <button onclick="window.location.href='#nav'">Back to Top</button>
+            </div>
+        </div>
+    </div>
+    
+    <script>
+        function sendMessage(id) {
+            var mobileNumber = '917000941854'; // Replace with the actual mobile number
+            var message = 'I\'m interested in this item, specifically the one identified as the dress number. ' + id;
+            var whatsappLink = 'https://api.whatsapp.com/send?phone=' + mobileNumber + '&text=' + encodeURIComponent(message);
+            window.open(whatsappLink);
+        };
+    </script>
+    
+    <script src="./source/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+</body>
+</html>
