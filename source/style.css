@@ -1,0 +1,373 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Inter:wght@100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+    background-color: rgb(124, 13, 19);
+}
+
+
+#nav {
+    margin: 2%;
+    box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding: 0 3%;
+    background-color: rgba(255, 255, 255, 0.7);
+    height: 60px;
+} 
+
+#nav #n-left img {
+    height: 3.1vw;
+}
+
+
+#nav #n-right ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;   
+    -webkit-box-pack: center;   
+        -ms-flex-pack: center;   
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 10vw;
+    list-style: none;
+}
+
+#nav #n-right ul li a {
+    text-decoration: none;
+    font-family: "Roboto Condensed", sans-serif;
+    color: black;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: -0.5px;
+    font-size: 15px;
+}
+
+#nav #n-right ul li a:hover {
+    text-decoration: underline;
+}
+
+#welcome {
+    background-image: url("../assets/bg.jpg");
+    background-position: 0px -15vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: 42vh;
+}
+
+#welcome h1 {
+    -webkit-transform: translateY(70%);
+        -ms-transform: translateY(70%);
+            transform: translateY(70%);
+    -webkit-backdrop-filter: blur(20px);
+            backdrop-filter: blur(20px);
+    font-size: 60px;
+    padding: 5px 10px;
+    color: transparent;
+    -webkit-text-stroke: 1.5px white; 
+}
+
+#bottom {
+    display: flex;
+    flex-direction: column;
+    gap: 10vh;
+    margin-bottom: 10vh;
+}
+
+#a, #b, #c, #d, #e {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+#a1, #a2, #a3 {
+    display: flex;
+    flex-direction: row;
+    gap: 1.5vw;
+}
+
+/* dress CSS */
+
+.dress {
+    position: relative;
+    width: 15vw;
+    /* background-color: blue; */
+    border-radius: 10px;
+}
+
+.dress img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.dress-info {
+    position: absolute;
+    top: 5vh;
+    background-color: rgba(255, 255, 255, 0.7); 
+    padding: 10px;
+    border-radius: 5px;
+    display: none;
+    margin: 10px;
+}
+
+.dress-info h2 {
+    font-family: 'Inter', sans-serif;
+    font-size: 15px;
+    color: black;
+    font-weight: 300;
+}
+
+
+.dress-info.active {
+    display: block;
+    transition: 2s ease;
+ 
+}
+
+.dress i {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    color: white;
+}
+
+.dress i:hover {
+    cursor: pointer;
+}
+
+.price-tag {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: rgb(194, 79, 79);
+    padding: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.price-tag p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    color: rgb(0, 4, 29);
+    margin-top: 5px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.price-tag button {
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    color: black;
+    background-color: orange;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-weight: 400;
+}
+
+.price-tag button:hover {
+    cursor: pointer;
+}
+
+
+/* Footer */
+#footer {
+    background-color: rgb(126, 40, 40);
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 2vw 0 2vw 2vw;
+}
+
+#footer img {
+    height: 10vh;
+}
+
+#footer p {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+    font-size: 17px;
+    color: white;
+}
+
+#footer ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 1vh;
+}
+
+#footer ul a {
+    font-size: 18px;
+    color: antiquewhite;
+    text-decoration: none;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+}
+
+#socials {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 5vh;
+}
+
+#socials h3 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    color: white;
+}
+
+#socials p {
+    color: royalblue;
+}
+
+#footer button {
+    padding: 20px 50px;
+    color: black;
+    font-weight: 500;
+    font-size: 15px;
+    background-color: burlywood;
+    border-radius: 10px;
+    font-family: 'Roboto', sans-serif;
+    border: none;
+}
+
+#footer button:hover {
+    cursor: pointer;
+}
+
+#instagram img {
+    height: 25px;
+}
+
+@media screen and (max-width: 768px) {
+    html, body{
+        background-color: antiquewhite;
+        overflow: visible;
+        /* height: 1000vh; */
+    }
+
+    #nav {
+        position: fixed;
+        width: 95%;
+        z-index: 2;
+        gap: 2.5vw;
+    }
+
+    #nav #n-left img {
+        height: 8.4vw;
+        /* width: 40vw; */
+    }
+
+    #nav #n-right ul {
+        gap: 3vw;
+    }
+
+    #nav #n-right ul li a {
+        font-size: 12px;
+    }
+
+    #welcome {
+        background-position: center center;
+    }
+
+    #welcome h1 {
+        font-size: 40px;
+    }
+
+    #a, #b, #c, #d, #e {
+        display: flex;
+        flex-direction: column;
+        margin: -5vh auto;
+    }
+    
+    #a1, #a2, #a3 {
+        display: flex;
+        flex-direction: row;
+        gap: 3.5vw;
+    }
+
+    #bottom {
+        margin-top: 5vh;
+    }
+
+    .dress {
+        width: 45vw;
+        margin: 5vh auto;
+    }
+
+    
+    #socials h3 {
+        font-size: 15px;
+        white-space: nowrap;
+    }
+    
+    #socials img {
+        height: 3vh;
+    }
+    
+    
+    /* FOOTER */
+    #footer button {
+        padding: 10px 30px;
+        font-size: 12px;
+    }
+
+    #footer img {
+        height: 6vh;
+    }
+
+    #footer p {
+        font-size: 15px;
+    }
+    
+    br {
+        display: none;
+    }
+
+
+}
+
+
+
+
+
+
+
+
+
+
