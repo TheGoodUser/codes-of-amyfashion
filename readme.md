@@ -30,8 +30,4 @@ Have questions or feedback? We'd love to hear from you! You can reach us via ema
 
 - Instagram: [@amyfashion.in](https://www.instagram.com/amy_fashion.in/)
 
-**License:**
-
-This project is licensed under the [MIT License](LICENSE).
-
 Thank you for visiting AmyFashion.in! Happy shopping!
